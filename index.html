@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | E-Commerce</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">E-Commerce</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="product.html">Product</a></li>
+                <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="account.html">My Account</a></li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0" action="#" method="GET">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search product" aria-label="Search" name="query">
+                <button class="btn btn-dark my-2 my-sm-0" type="submit" disabled>Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <header class="hero-header text-center text-white d-flex flex-column justify-content-center align-items-center" style="background-image: url('images/hero-background.jpeg'); background-size: cover; background-position: center; height: 400px;">
+        <div class="hero-overlay d-flex justify-content-center align-items-center" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.5);">
+            <div class="hero-content">
+                <h1 class="display-4">Welcome to E-Commerce</h1>
+                <p class="lead">Discover the best deals on your favorite products!</p>
+                <a href="product.html" class="btn btn-light btn-lg">Shop Now</a>
+            </div>
+        </div>
+    </header>
+    
+
+    <main class="container my-5">
+        <h2 class="text-center mb-4">Featured Products</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card border-light shadow-sm animated-card">
+                    <div class="card-img-top hero-image" style="height: 200px;">
+                        <img src="images/img-7.jpeg" class="img-fluid" alt="Product Image 1">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Shirt </h5>
+                        <p class="card-text">₹1,499</p>
+                        <a href="product.html" class="btn btn-dark">View Product</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card border-light shadow-sm animated-card">
+                    <div class="card-img-top hero-image" style="height: 200px;">
+                        <img src="images/img-4.jpeg" class="img-fluid" alt="Product Image 2">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Shirt</h5>
+                        <p class="card-text">₹1,999</p>
+                        <a href="product.html" class="btn btn-dark">View Product</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card border-light shadow-sm animated-card">
+                    <div class="card-img-top hero-image" style="height: 200px;">
+                        <img src="images/img-6.jpeg" class="img-fluid" alt="Product Image 3">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Shirt</h5>
+                        <p class="card-text">₹2,499</p>
+                        <a href="product.html" class="btn btn-dark">View Product</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="my-5">
+            <h3 class="text-center mb-4">Feedback</h3>
+            <div class="feedback-placeholder">
+                <span>Feedback Section Placeholder</span>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 E-Commerce | <a href="contact.html" class="text-light">Contact</a> | Follow us on <a href="#" class="text-light">Social Media</a></p>
+        <p>Contact us: abhishekkbm02@gmail.com</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

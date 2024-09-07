@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account | E-Commerce</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: #f0f0f0;
+        }
+        .account-header {
+            background-color: #333;
+            color: #f0f0f0;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .account-header h2 {
+            margin-bottom: 0;
+        }
+        .account-info {
+            background-color: #2c2c2c;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .account-info label {
+            font-weight: bold;
+        }
+        .profile-photo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .profile-photo img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            margin-right: 20px;
+            border: 4px solid #444;
+        }
+        .profile-content {
+            flex: 1;
+        }
+        .profile-intro {
+            background-color: #2c2c2c;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .profile-stats {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .profile-stats h5 {
+            margin-bottom: 10px;
+        }
+        .order-history {
+            background-color: #2c2c2c;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .order-history table {
+            color: #f0f0f0;
+        }
+        .btn-dark {
+            background-color: #444;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">E-Commerce</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="product.html">Product</a></li>
+                <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="account.html">My Account</a></li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0" action="search.html" method="GET">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search product" aria-label="Search" name="query">
+                <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="account-header text-center">
+            <h2>Account Details</h2>
+            <p>Welcome back, Abhishek!</p>
+        </div>
+        
+        <div class="account-info">
+            <div class="profile-photo">
+                <img src="images/profile.jpg" alt="Profile Photo">
+                <div class="profile-content">
+                    <h4>Personal Information</h4>
+                    <form>
+                        <div class="form-group">
+                            <label for="accountName">Name</label>
+                            <input type="text" class="form-control" id="accountName" value="Abhishek Kumar" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="accountEmail">Email</label>
+                            <input type="email" class="form-control" id="accountEmail" value="abhishekkbm02@gmail.com" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="accountAddress">Address</label>
+                            <textarea class="form-control" id="accountAddress" rows="3" readonly>Barashat-126, Kolkata, West Bengal</textarea>
+                        </div>
+                        <button type="button" class="btn btn-dark">Edit Information</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="profile-intro">
+                <h5>About Me</h5>
+                <p>Hello! I'm Abhishek Kumar. I enjoy shopping for the latest fashion trends. Feel free to reach out if you have any questions or need assistance!</p>
+            </div>
+
+            <div class="profile-stats">
+                <h5>Account Stats</h5>
+                <ul>
+                    <li>Total Orders: <strong>15</strong></li>
+                    <li>Wishlist Items: <strong>8</strong></li>
+                    <li>Reviews Written: <strong>5</strong></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="order-history mt-4">
+            <h4>Order History</h4>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Date</th>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Total Price</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#001</td>
+                        <td>2024-08-01</td>
+                        <td>Product 1</td>
+                        <td>2</td>
+                        <td>₹2,998</td>
+                        <td>Delivered</td>
+                    </tr>
+                    <tr>
+                        <td>#002</td>
+                        <td>2024-08-15</td>
+                        <td>Product 2</td>
+                        <td>1</td>
+                        <td>₹1,999</td>
+                        <td>Delivered</td>
+                    </tr>
+                    <tr>
+                        <td>#003</td>
+                        <td>2024-08-20</td>
+                        <td>Product 3</td>
+                        <td>3</td>
+                        <td>₹4,497</td>
+                        <td>Delivered</td>
+                    </tr>
+                    <tr>
+                        <td>#004</td>
+                        <td>2024-09-01</td>
+                        <td>Product 4</td>
+                        <td>2</td>
+                        <td>₹3,198</td>
+                        <td>Delivered</td>
+                    </tr>
+                    <tr>
+                        <td>#005</td>
+                        <td>2024-09-03</td>
+                        <td>Product 5</td>
+                        <td>1</td>
+                        <td>₹1,499</td>
+                        <td>Pending</td>
+                    </tr>
+                    <tr>
+                        <td>#006</td>
+                        <td>2024-09-04</td>
+                        <td>Product 6</td>
+                        <td>4</td>
+                        <td>₹5,996</td>
+                        <td>Shipped</td>
+                    </tr>
+                    <tr>
+                        <td>#007</td>
+                        <td>2024-09-04</td>
+                        <td>Product 7</td>
+                        <td>2</td>
+                        <td>₹2,998</td>
+                        <td>Delivered</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 E-Commerce | <a href="contact.html" class="text-light">Contact</a> | Follow us on <a href="#" class="text-light">Social Media</a> </p>
+        <p>Contact us: abhishekkbm02@gmail.com</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5-1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

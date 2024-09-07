@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product | E-Commerce</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">E-Commerce</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="product.html">Product</a></li>
+                <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="account.html">My Account</a></li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0" action="search.html" method="GET">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search product" aria-label="Search" name="query">
+                <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="productCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="hero-image" style="height: 400px;">
+                                <img src="images/img-8.jpeg" class="d-block w-100" alt="Product Image 1">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="hero-image" style="height: 400px;">
+                                <img src="images/img-9.jpeg" class="d-block w-100" alt="Product Image 2">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="hero-image" style="height: 400px;">
+                                <img src="images/img-10.jpeg" class="d-block w-100" alt="Product Image 3">
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2>Shirt</h2>
+                <p class="text-muted">₹1,499</p>
+                <p>Cotton shirts are a popular choice for clothing.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="productSize">Size</label>
+                        <select class="form-control" id="productSize">
+                            <option>Small</option>
+                            <option>Medium</option>
+                            <option>Large</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="productColor">Color</label>
+                        <select class="form-control" id="productColor">
+                            <option>Red</option>
+                            <option>Blue</option>
+                            <option>Green</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="productQuantity">Quantity</label>
+                        <input type="number" class="form-control" id="productQuantity" value="1" min="1">
+                    </div>
+                    <button type="submit" class="btn btn-dark">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+        <section class="my-5">
+            <h3 class="text-center mb-4">Related Products</h3>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card border-light shadow-sm animated-card">
+                        <div class="card-img-top hero-image" style="height: 200px;">
+                            <img src="images/img-11.jpeg" class="img-fluid" alt="Related Product Image 1">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Shirt</h5>
+                            <p class="card-text">₹999</p>
+                            <a href="product.html" class="btn btn-dark">View Product</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card border-light shadow-sm animated-card">
+                        <div class="card-img-top hero-image" style="height: 200px;">
+                            <img src="images/img-12.jpeg" class="img-fluid" alt="Related Product Image 2">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Shirt</h5>
+                            <p class="card-text">₹1,299</p>
+                            <a href="product.html" class="btn btn-dark">View Product</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card border-light shadow-sm animated-card">
+                        <div class="card-img-top hero-image" style="height: 200px;">
+                            <img src="images/img-13.jpeg" class="img-fluid" alt="Related Product Image 3">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Shirt</h5>
+                            <p class="card-text">₹1,799</p>
+                            <a href="product.html" class="btn btn-dark">View Product</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 E-Commerce | <a href="contact.html" class="text-light">Contact</a> | Follow us on <a href="#" class="text-light">Social Media</a></p>
+        <p>Contact us: abhishekkbm02@gmail.com</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
